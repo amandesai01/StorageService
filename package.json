@@ -1,0 +1,28 @@
+{
+  "name": "storageservice",
+  "version": "1.0.0",
+  "description": "A Highly Scalable Storage Service implemented using Consistent Hashing.",
+  "main": "StorageService/app.js",
+  "scripts": {
+    "test": "node Tests/check.js",
+    "run" : "node StorageService/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandesai01/StorageService.git"
+  },
+  "keywords": [
+    "Storage",
+    "Service",
+    "Consistent",
+    "Hashing",
+    "AWS",
+    "Cloud"
+  ],
+  "author": "Aman Desai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amandesai01/StorageService/issues"
+  },
+  "homepage": "https://github.com/amandesai01/StorageService#readme"
+}

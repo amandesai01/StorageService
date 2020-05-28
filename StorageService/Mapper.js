@@ -8,7 +8,7 @@ var map = async (hashval) => {
     }
     let index = hashval % config.MAX_SERVERS;
     if(!allocations.storages[index]){
-        for(var i = 0; i < allocations.storages.length; i++){
+        for(var i = index; i < allocations.storages.length; i++){
             if(allocations.storages[i]){
                 index = i
                 break;

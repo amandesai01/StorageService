@@ -7,3 +7,5 @@ var hash = async (input_string) => {
     }
     return hash;
 }
+
+module.exports = { hash }

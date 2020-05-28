@@ -32,6 +32,7 @@ var create_allocations = async () => {
         obj.storages[some_random_index] = available_servers[i]
     }
     fs.writeFileSync("./allocation_data.json", JSON.stringify(obj))
+    return obj
 }
 
 var get_allocations = async () => {
@@ -48,3 +49,5 @@ var get_allocations = async () => {
         return null;
     }
 }
+
+module.exports = { get_allocations, create_allocations }

@@ -6,7 +6,8 @@ var storage = multer.diskStorage({
     destination : (req, file, cb) => {
         let path = req.body.path
         let hashval = await hasher.hash(path)
-        let destination = await mapper.map(hashval)
+        let destination_server = await mapper.map(hashval)
+        let destination = destination_server.id
         cb(null, destination)
     },
     filename: (req, file, cb) => {

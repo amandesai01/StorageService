@@ -1,14 +1,9 @@
-var router = require('express')();
+var express = require('express');
 var multer = require('multer');
+var storage = require('./storage_config')
 
-var storage = multer.diskStorage({
-    destination : (req, file, cb) => {
-
-    },
-    filename: (req, file, cb) => {
-
-    }
-});
+var router = express()
+router.use(express.json())
 
 var upload = multer({ storage : storage })
 

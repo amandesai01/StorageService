@@ -16,5 +16,6 @@ var map = async (hashval) => {
         }
     }
     return allocations.storages[index]
-
 }
+
+module.exports = { map }

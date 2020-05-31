@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/amandesai01/StorageService#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "multer": "^1.4.2"
   }
